@@ -349,3 +349,83 @@ p {
   letter-spacing: 2px;
   padding-top: 1rem;
 }
+
+.about-center {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  row-gap: 1rem;
+}
+
+.content-form h3 {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.form {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 1.5rem;
+  /* background-color: brown; */
+}
+
+.form-row i {
+  font-size: 2rem;
+  align-self: center;
+  flex: 0 0 20%;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.form-row input {
+  padding: 1rem;
+  width: 100%;
+  background: transparent;
+  font-size: var(--font-size-s-h4);
+  border: transparent;
+}
+.form-row input:focus {
+  outline: transparent;
+}
+
+.btn-form {
+  margin-top: 0.5rem;
+  width: 80%;
+  margin: 0;
+}
+
+.footer {
+  background-color: rgb(255, 102, 0);
+}
+
+.footer-center {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+}
+
+.footer .card {
+  margin-top: 2rem;
+}
+
+.footer .card i {
+  font-size: 4rem;
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+.footer .card h5 {
+  text-align: center;
+  font-size: var(--font-size-s-h4);
+  letter-spacing: 2px;
+}
