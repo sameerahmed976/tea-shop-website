@@ -213,6 +213,14 @@ p {
   min-height: 100vh;
 }
 
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
 .hero-text h1 {
   padding-top: 5rem;
   max-width: 60%;
@@ -220,12 +228,14 @@ p {
   margin: 0 auto;
   font-size: var(--font-size-s-h4);
   text-align: center;
-  color: white;
+  color: var(--primary-color);
+  text-shadow: 2px 3px 6px rgb(255, 255, 255);
+  text-transform: uppercase;
 }
 
 .btn {
   padding: 0.5rem;
-  width: 55%;
+  width: 45vw;
   font-size: var(--font-size-s-h4);
   font-weight: bold;
   letter-spacing: 2px;
@@ -277,7 +287,6 @@ p {
   margin: 0 auto;
   width: 90vw;
   max-width: 1170px;
-  background-color: rgba(255, 255, 255, 0.356);
 }
 
 .about-center {
@@ -321,7 +330,7 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   row-gap: 1rem;
-  grid-template-rows: repeat(8, 430px);
+  grid-template-rows: repeat(4, 430px);
 }
 
 .card {
@@ -388,7 +397,7 @@ p {
 }
 
 .form-row input {
-  padding: 1rem;
+  padding: 0.4rem;
   width: 100%;
   background: transparent;
   font-size: var(--font-size-s-h4);
@@ -405,7 +414,7 @@ p {
 }
 
 .footer {
-  background-color: rgb(255, 102, 0);
+  background-color: white;
 }
 
 .footer-center {
@@ -415,6 +424,7 @@ p {
 }
 
 .footer .card {
+  background-color: white;
   margin-top: 2rem;
 }
 
@@ -423,9 +433,161 @@ p {
   text-align: center;
   width: 100%;
   padding: 1rem 0;
+  color: var(--primary-color);
 }
 .footer .card h5 {
   text-align: center;
   font-size: var(--font-size-s-h4);
   letter-spacing: 2px;
+  color: black;
+  font-weight: bold;
+  font-family: var(--heading-font);
+}
+
+.footer .card p {
+  word-break: break-all;
+  text-align: left;
+}
+
+.footer .card a {
+  font-size: var(--font-size-s-h6);
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0.1rem 0;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+}
+
+.footer .footer-text {
+  font-size: 0.9rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+  padding: 1rem 0;
+  font-weight: bold;
+  color: var(--primary-color);
+  background-color: black;
+}
+
+.footer .underline {
+  height: 4px;
+  width: 90%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .hero-text {
+    min-height: 100vh;
+  }
+
+  .hero-text h1 {
+    text-transform: uppercase;
+  }
+
+  .menu-center {
+    column-gap: 1rem;
+  }
+
+  .form {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .btn-form {
+    width: 55%;
+  }
+
+  .footer-center {
+    grid-template-columns: 0.7fr;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn-order {
+    width: 30%;
+  }
+  .footer .footer-text {
+    font-size: var(--font-size-s-h5);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-order {
+    width: 30%;
+  }
+  .about-center {
+    column-gap: 2rem;
+  }
+  .hero-text {
+    min-height: 100vh;
+  }
+
+  .about-center {
+    grid-template-columns: 1fr 1fr;
+  }
+  .btn-form {
+    width: 80%;
+  }
+
+  .footer-center {
+    grid-template-columns: 350px 350px;
+    column-gap: 1rem;
+    margin: 0 auto;
+  }
+
+  .footer .card a {
+    font-size: var(--font-size-s-h5);
+  }
+  .footer .footer-text {
+    font-size: var(--font-size-s-h4);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hero-text h1 {
+    font-size: var(--font-size-s-h2);
+  }
+  .btn-order {
+    width: 20%;
+  }
+  .about-center {
+    column-gap: 2rem;
+  }
+  .menu-center {
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .footer-center {
+    grid-template-columns: 450px 450px;
+  }
+  .footer .card a {
+    font-size: var(--font-size-s-h4);
+  }
+  .footer .footer-text {
+    font-size: var(--font-size-s-h3);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .btn-order {
+    width: 20%;
+  }
+
+  .about-center {
+    column-gap: 2rem;
+  }
+
+  .menu-center {
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .footer-center {
+    grid-template-columns: 550px 550px;
+  }
+  .footer .card a {
+    font-size: var(--font-size-s-h3);
+  }
+  .footer .footer-text {
+    font-size: var(--font-size-s-h2);
+  }
 }
