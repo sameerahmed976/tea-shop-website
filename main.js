@@ -1,5 +1,6 @@
 const hamburgerBtn = document.querySelector(".hamburger");
 const sidebar = document.querySelector(".sidebar");
+const date = document.querySelector(".date");
 const sidebarLinks = document.querySelectorAll(".sidebar li a");
 // const navLinksActive = document.querySelector(".nav-links-active");
 
@@ -25,3 +26,7 @@ sidebarLinks.forEach((link) => {
     document.body.style.backgroundColor = "";
   });
 });
+
+const dateNew = new Date().getFullYear();
+
+date.innerHTML = `${dateNew}`;
